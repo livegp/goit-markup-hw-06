@@ -25,7 +25,7 @@
   --color-win-modal: #fcfcfc;
 }
 
-body {
+.body {
   color: var(--color-text-dark);
   font-size: var(--font-size-normal);
   font-family: var(--font);
@@ -75,10 +75,7 @@ body {
 /* =============== HEADER =============== */
 .header {
   border-bottom: 1px solid var(--color-text-light);
-  box-shadow:
-    0 2px 1px rgb(46 47 66 / 8%),
-    0 1px 1px rgb(46 47 66 / 16%),
-    0 1px 6px rgb(46 47 66 / 8%);
+  box-shadow: 0 2px 1px rgb(46 47 66 / 8%), 0 1px 1px rgb(46 47 66 / 16%), 0 1px 6px rgb(46 47 66 / 8%);
 }
 
 .header .container {
@@ -293,10 +290,7 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   background-color: var(--color-light);
   border-radius: 0 0 4px 4px;
-  box-shadow:
-    0 1px 6px rgb(46 47 66 / 8%),
-    0 1px 1px rgb(46 47 66 / 16%),
-    0 2px 1px rgb(46 47 66 / 8%);
+  box-shadow: 0 1px 6px rgb(46 47 66 / 8%), 0 1px 1px rgb(46 47 66 / 16%), 0 2px 1px rgb(46 47 66 / 8%);
 }
 
 .team-text {
@@ -360,9 +354,7 @@ body {
   height: 88px;
   border: 1px solid var(--color-icon);
   border-radius: 4px;
-  transition:
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-icon);
 }
 
@@ -449,10 +441,7 @@ body {
   height: 576px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  box-shadow:
-    0 1px 1px rgb(0 0 0 / 14%),
-    0 1px 3px rgb(0 0 0 / 12%),
-    0 2px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 1px 3px rgb(0 0 0 / 12%), 0 2px 1px rgb(0 0 0 / 20%);
   transform: translate(-50%, -50%);
 }
 
@@ -468,10 +457,7 @@ body {
   background-color: var(--color-text-light);
   border: 1px solid rgb(0 0 0 / 10%);
   border-radius: 50%;
-  transition:
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:is(:hover, :focus) {
@@ -502,11 +488,7 @@ body {
   background-color: var(--color-alt);
   border: 1px solid var(--color-text-light);
   border-radius: 4px;
-  transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-list {
@@ -524,9 +506,7 @@ body {
 .work-link {
   border: 1px solid var(--color-text-light);
   box-shadow: 0 1px 6px rgb(46 47 66 / 8%);
-  transition:
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-link img {
@@ -581,20 +561,14 @@ body {
   color: var(--color-light);
   background-color: var(--color-active);
   border: 1px solid var(--color-active);
-  box-shadow:
-    0 3px 1px rgb(0 0 0 / 10%),
-    0 2px 1px rgb(0 0 0 / 8%),
-    0 2px 2px rgb(0 0 0 / 12%);
+  box-shadow: 0 3px 1px rgb(0 0 0 / 10%), 0 2px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%);
 }
 
 .work-link:is(:hover, :focus) {
   border-color: var(--color-alt);
-  box-shadow:
-    0 1px 6px rgb(46 47 66 / 8%),
-    0 1px 1px rgb(46 47 66 / 16%),
-    0 2px 1px rgb(46 47 66 / 8%);
+  box-shadow: 0 1px 6px rgb(46 47 66 / 8%), 0 1px 1px rgb(46 47 66 / 16%), 0 2px 1px rgb(46 47 66 / 8%);
 }
 
 .work-link:is(:hover, :focus) .work-overlay {
   transform: translate(0);
-}/*# sourceMappingURL=styles.css.map */
+}
