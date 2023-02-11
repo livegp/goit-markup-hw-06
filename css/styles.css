@@ -27,7 +27,8 @@
 
 body {
   color: var(--color-text-dark);
-  font: var(--font-size-normal) var(--font);
+  font-size: var(--font-size-normal);
+  font-family: var(--font);
   background: var(--color-light);
 }
 
@@ -44,7 +45,6 @@ body {
   height: 1px;
   margin: -1px;
   padding: 0;
-
   overflow: hidden;
   white-space: nowrap;
   border: 0;
@@ -85,7 +85,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -104,7 +103,6 @@ body {
 .nav-link {
   position: relative;
   color: var(--color-dark);
-
   font-weight: var(--font-medium);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -115,7 +113,6 @@ body {
   position: absolute;
   bottom: -28px;
   display: block;
-
   width: 100%;
   height: 4px;
   background-color: var(--color-active);
@@ -162,7 +159,6 @@ body {
   margin: 0 auto;
   color: var(--color-light);
   font-weight: var(--font-bold);
-
   font-size: var(--font-size-h1);
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -171,11 +167,9 @@ body {
 
 .hero-btn {
   display: block;
-
   margin: 48px auto 0;
   padding: 16px 32px;
   color: var(--color-light);
-
   font-weight: var(--font-medium);
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -208,7 +202,6 @@ body {
 .skills-block-icon {
   display: flex;
   justify-content: center;
-
   height: 112px;
   background-color: var(--color-alt);
   border-radius: 4px;
@@ -218,7 +211,6 @@ body {
   margin: 8px 0;
   color: var(--color-dark);
   font-weight: var(--font-medium);
-
   font-size: var(--font-size-h3);
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -239,7 +231,6 @@ body {
   margin-bottom: 72px;
   color: var(--color-dark);
   font-weight: var(--font-bold);
-
   font-size: var(--font-size-h2);
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -271,7 +262,6 @@ body {
   margin-bottom: 72px;
   color: var(--color-dark);
   font-weight: var(--font-bold);
-
   font-size: var(--font-size-h2);
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -293,7 +283,6 @@ body {
   margin-bottom: 8px;
   color: var(--color-dark);
   font-weight: var(--font-medium);
-
   font-size: var(--font-size-h3);
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -326,7 +315,6 @@ body {
 .team-social-link {
   display: flex;
   justify-content: center;
-
   width: 40px;
   height: 40px;
   background-color: var(--color-accent);
@@ -348,7 +336,6 @@ body {
   margin-bottom: 72px;
   color: var(--color-dark);
   font-weight: var(--font-bold);
-
   font-size: var(--font-size-h2);
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -369,7 +356,6 @@ body {
 .customers-link {
   display: flex;
   justify-content: center;
-
   width: 168px;
   height: 88px;
   border: 1px solid var(--color-icon);
@@ -405,7 +391,6 @@ body {
 .footer-text {
   margin-top: 16px;
   color: var(--color-text-light);
-
   font-weight: var(--font-regular);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -427,7 +412,6 @@ body {
 .footer-social-link {
   display: flex;
   justify-content: center;
-
   width: 40px;
   height: 40px;
   background-color: rgb(255 255 255 / 10%);
@@ -479,7 +463,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 24px;
   height: 24px;
   background-color: var(--color-text-light);
@@ -513,7 +496,6 @@ body {
 .work-btn {
   padding: 12px 24px;
   color: var(--color-accent);
-
   font-weight: var(--font-medium);
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -562,14 +544,11 @@ body {
   top: 0;
   left: 0;
   display: block;
-
   width: 100%;
   height: 100%;
   padding: 40px 32px;
-
   overflow: auto;
   color: var(--color-alt);
-
   font-weight: var(--font-regular);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -586,7 +565,6 @@ body {
   margin-bottom: 8px;
   color: var(--color-dark);
   font-weight: var(--font-medium);
-
   font-size: var(--font-size-h3);
   line-height: 1.2;
   letter-spacing: 0.02em;
