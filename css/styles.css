@@ -54,9 +54,20 @@ body {
 
 .logo {
   color: var(--color-accent);
-  font: var(--font-black) var(--font-size-big) / 1.33 Raleway, sans-serif;
+  font-weight: var(--font-black);
+  font-size: var(--font-size-big);
+  font-family: Raleway, sans-serif;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.logo-header {
+  color: var(--color-dark);
+}
+
+.logo-footer {
+  color: var(--color-alt);
 }
 
 /***************** HOME ******************/
@@ -77,10 +88,6 @@ body {
 
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.logo-header {
-  color: var(--color-dark);
 }
 
 .nav-section {
@@ -104,11 +111,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:is(:hover, :focus),
-.nav-link-active {
-  color: var(--color-active);
-}
-
 .nav-link-active::after {
   position: absolute;
   bottom: -28px;
@@ -119,6 +121,11 @@ body {
   background-color: var(--color-active);
   border-radius: 2px;
   content: "";
+}
+
+.nav-link:is(:hover, :focus),
+.nav-link-active {
+  color: var(--color-active);
 }
 
 .address {
@@ -139,14 +146,15 @@ body {
 }
 
 /* =============== HERO =============== */
-
 .hero {
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
-  background:
-    linear-gradient(var(--color-bgd-hero), var(--color-bgd-hero)) no-repeat center/1440px auto,
-    url("../images/home/hero/people-office.jpg") no-repeat center/1440px auto var(--color-dark);
+  background-color: var(--color-dark);
+  background-image: linear-gradient(var(--color-bgd-hero), var(--color-bgd-hero)), url("../images/home/hero/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px auto;
 }
 
 .hero-title {
@@ -194,7 +202,7 @@ body {
 }
 
 .skills-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .skills-block-icon {
@@ -246,8 +254,8 @@ body {
 }
 
 .doing-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-  background: linear-gradient(rgb(77 90 229 / 10%), rgb(77 90 229 / 10%));
+  flex-basis: calc((100% - 48px) / 3);
+  background-image: linear-gradient(rgb(77 90 229 / 10%), rgb(77 90 229 / 10%));
   background-blend-mode: soft-light, normal;
   border: 1px solid #e7e9fc;
 }
@@ -256,7 +264,7 @@ body {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: var(--color-alt);
+  background-color: var(--color-alt);
 }
 
 .team-title {
@@ -293,8 +301,8 @@ body {
 }
 
 .team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-  background: var(--color-light);
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: var(--color-light);
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 1px 6px rgb(46 47 66 / 8%),
@@ -331,7 +339,6 @@ body {
 }
 
 /* =============== CUSTOMERS =============== */
-
 .customers {
   padding-top: 130px;
   padding-bottom: 120px;
@@ -356,7 +363,7 @@ body {
 }
 
 .customers-item {
-  flex-basis: calc((100% - 5 * 24px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
 }
 
 .customers-link {
@@ -382,7 +389,7 @@ body {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: var(--color-dark);
+  background-color: var(--color-dark);
 }
 
 .footer .container {
@@ -393,10 +400,6 @@ body {
 .footer-content {
   max-width: 264px;
   margin-right: 120px;
-}
-
-.logo-footer {
-  color: var(--color-alt);
 }
 
 .footer-text {
@@ -460,7 +463,7 @@ body {
   left: 50%;
   width: 408px;
   height: 576px;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow:
     0 1px 1px rgb(0 0 0 / 14%),
@@ -479,7 +482,7 @@ body {
 
   width: 24px;
   height: 24px;
-  background: var(--color-text-light);
+  background-color: var(--color-text-light);
   border: 1px solid rgb(0 0 0 / 10%);
   border-radius: 50%;
   transition:
@@ -514,7 +517,7 @@ body {
   font-weight: var(--font-medium);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background: var(--color-alt);
+  background-color: var(--color-alt);
   border: 1px solid var(--color-text-light);
   border-radius: 4px;
   transition:
@@ -522,16 +525,6 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work-btn:is(:hover, :focus) {
-  color: var(--color-light);
-  background-color: var(--color-active);
-  border: 1px solid var(--color-active);
-  box-shadow:
-    0 3px 1px rgb(0 0 0 / 10%),
-    0 2px 1px rgb(0 0 0 / 8%),
-    0 2px 2px rgb(0 0 0 / 12%);
 }
 
 .work-list {
@@ -543,7 +536,7 @@ body {
 
 .work-item {
   display: flex;
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .work-link {
@@ -554,12 +547,9 @@ body {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-link:is(:hover, :focus) {
-  border-color: var(--color-alt);
-  box-shadow:
-    0 1px 6px rgb(46 47 66 / 8%),
-    0 1px 1px rgb(46 47 66 / 16%),
-    0 2px 1px rgb(46 47 66 / 8%);
+.work-link img {
+  background-image: linear-gradient(0deg, rgb(77 90 229 / 10%), rgb(77 90 229 / 10%));
+  background-blend-mode: soft-light, normal;
 }
 
 .work-image {
@@ -588,15 +578,6 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-link:is(:hover, :focus) .work-overlay {
-  transform: translate(0);
-}
-
-.work-link img {
-  background: linear-gradient(0deg, rgb(77 90 229 / 10%), rgb(77 90 229 / 10%));
-  background-blend-mode: soft-light, normal;
-}
-
 .work-content {
   padding: 32px 16px;
 }
@@ -617,3 +598,26 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.work-btn:is(:hover, :focus) {
+  color: var(--color-light);
+  background-color: var(--color-active);
+  border: 1px solid var(--color-active);
+  box-shadow:
+    0 3px 1px rgb(0 0 0 / 10%),
+    0 2px 1px rgb(0 0 0 / 8%),
+    0 2px 2px rgb(0 0 0 / 12%);
+}
+
+.work-link:is(:hover, :focus) {
+  border-color: var(--color-alt);
+  box-shadow:
+    0 1px 6px rgb(46 47 66 / 8%),
+    0 1px 1px rgb(46 47 66 / 16%),
+    0 2px 1px rgb(46 47 66 / 8%);
+}
+
+.work-link:is(:hover, :focus) .work-overlay {
+  transform: translate(0);
+}
+/*# sourceMappingURL=styles.css.map */
