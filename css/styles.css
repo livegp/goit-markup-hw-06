@@ -42,8 +42,6 @@
   color: #f4f4fd;
 }
 
-/***************** HOME ******************/
-/* =============== HEADER =============== */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
@@ -105,7 +103,6 @@
   color: #404bbf;
 }
 
-/* =============== HERO =============== */
 .hero {
   height: 600px;
   padding-top: 188px;
@@ -143,7 +140,6 @@
   background-color: #404bbf;
 }
 
-/* =============== SKILLS =============== */
 .skills {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -177,7 +173,6 @@
   letter-spacing: 0.02em;
 }
 
-/* =============== DOING =============== */
 .doing {
   padding-bottom: 120px;
 }
@@ -203,7 +198,6 @@
   border: 1px solid #e7e9fc;
 }
 
-/* =============== TEAM =============== */
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -266,7 +260,6 @@
   background-color: #404bbf;
 }
 
-/* =============== CUSTOMERS =============== */
 .customers {
   padding-top: 128px;
   padding-bottom: 120px;
@@ -304,7 +297,6 @@
   fill: #404bbf;
 }
 
-/* =============== FOOTER =============== */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -413,7 +405,6 @@
   background-color: #404bbf;
 }
 
-/* =============== MODAL =============== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -461,7 +452,6 @@
   fill: #fff;
 }
 
-/* =============== MODAL FORM =============== */
 .form {
   display: flex;
   flex-direction: column;
@@ -612,7 +602,6 @@
   background-color: #404bbf;
 }
 
-/***************** PORTFOLIO ******************/
 .work {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -705,4 +694,4 @@
   letter-spacing: 0.02em;
 }
 
-/*# !sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css.map */
